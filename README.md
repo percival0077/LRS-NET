@@ -1,47 +1,76 @@
-# LRS-NET Chat
+<div align="center">
 
-A Flutter Android app for communicating with the LRS-Net base station over WiFi.
-
-## Features
-
-- **Chat tab** – real-time message bubbles (Hiker on left, Base on right)
-- **GPS tab** – live GPS card (lat, lon, fix, altitude, course, date, time, RSSI, SNR) with "Open in Maps" button
-- **Status bar** – green "Connected" / red "No signal" indicator
-- **Auto-reconnect** – retries WebSocket connection every 3 seconds
-
-## Prerequisites
-
-1. Connect your Android phone to the `LRS-Net` WiFi hotspot (password: `basecamp1`) **before** opening the app.
-2. The app connects to `ws://192.168.4.1/ws` automatically on launch.
-
-## Building
-
-```bash
-flutter pub get
-flutter build apk --release
 ```
 
-The release APK will be at `build/app/outputs/flutter-apk/app-release.apk`.
-
-## WebSocket Protocol
-
-### Incoming (server → app)
-
-```json
-{"type":"gps","lat":"...","lon":"...","fix":"3","alt":"...","course":"...","date":"...","time":"...","rssi":"...","snr":"..."}
-{"type":"chat","from":"hiker","text":"..."}
+███╗   ███╗██╗███╗   ██╗██████╗ ███████╗███████╗
+████╗ ████║██║████╗  ██║██╔══██╗██╔════╝██╔════╝
+██╔████╔██║██║██╔██╗ ██║██████╔╝███████╗███████╗
+██║╚██╔╝██║██║██║╚██╗██║██╔═══╝ ╚════██║╚════██║
+██║ ╚═╝ ██║██║██║ ╚████║██║     ███████║███████║
+╚═╝     ╚═╝╚═╝ ╚═╝  ╚═══╝╚═╝     ╚══════╝╚══════╝
 ```
 
-### Outgoing (app → server)
 
-```json
-{"type":"chat","text":"user message here"}
-```
+# LRS-NET
 
-## Packages Used
 
-| Package | Purpose |
-|---|---|
-| `web_socket_channel` | WebSocket client |
-| `provider` | State management |
-| `url_launcher` | Open Google Maps |
+A Dart project
+
+
+![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white) ![Dart](https://img.shields.io/badge/Dart-0175C2?style=for-the-badge&logo=dart&logoColor=white)
+
+
+</div>
+
+---
+
+
+## 📖 About
+
+A Dart project
+
+---
+
+## ✨ Features
+
+- ✅ **Chat tab** – real-time message bubbles (Hiker on left, Base on right)
+- ✅ **GPS tab** – live GPS card (lat, lon, fix, altitude, course, date, time, RSSI, SNR) with "Open in Maps" button
+- ✅ **Status bar** – green "Connected" / red "No signal" indicator
+- ✅ **Auto-reconnect** – retries WebSocket connection every 3 seconds
+
+---
+
+## 🛠️ Tech Stack
+
+**Languages**: `Dart`
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+---
+
+
+
+---
+<div align="center">
+
+**Made with ❤️ by [lukan-lawslaf](https://github.com/lukan-lawslaf)**
+
+⭐ Star this repo if you found it helpful!
+
+</div>
